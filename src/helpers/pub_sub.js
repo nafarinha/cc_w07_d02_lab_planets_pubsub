@@ -7,7 +7,7 @@ const PubSub = {
   },
 
   subscribe: function (channel, callback) {
-    document.addEventlistener(channel, callback);
+    document.addEventListener(channel, callback);
   }
 };
 module.exports = PubSub;

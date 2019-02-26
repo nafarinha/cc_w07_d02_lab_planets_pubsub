@@ -8,9 +8,10 @@ StartView.prototype.bindEvents = function () {
   const menu = document.querySelector('nav');
   menu.addEventListener('click', (evt) => {
 
-    const planetDetails = evt.target.id;
+    const planetName = evt.target.id;
 //Delete after testing
-    console.log("planetDetails", planetDetails);
+    console.log("planetName", planetName);
+    PubSub.publish('StartView:planet-chosen', planetName);
 
   });
 

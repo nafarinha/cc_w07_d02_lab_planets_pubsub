@@ -8,4 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const startView = new StartView();
   startView.bindEvents();
+
+  planetsDataModel.bindEvents();
 });
